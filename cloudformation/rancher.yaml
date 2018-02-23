@@ -224,18 +224,6 @@
         FromPort: '9345'
         ToPort: '9345'
         SourceSecurityGroupId: !Ref RancherSecurityGroup
-    RancherSgIngress9345TCP:
-      Type: 'AWS::EC2::SecurityGroupIngress'
-      DependsOn: RancherSecurityGroup
-      Properties:
-        Tags:
-          - Key: Name
-            Value: Rancher (SecurityGroupIngress)
-        GroupId: !Ref RancherSecurityGroup
-        IpProtocol: tcp
-        FromPort: '9345'
-        ToPort: '9345'
-        SourceSecurityGroupId: !Ref RancherSecurityGroup
     IAMRole:
       Type: 'AWS::IAM::Role'
       Properties:

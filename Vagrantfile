@@ -8,7 +8,7 @@
 #
 require_relative 'vagrant_rancheros_guest_plugin.rb'
 $memory_size = 2048
-$number_of_nodes = 1
+$number_of_nodes = 2
 $node_mem = "2048"
 $node_cpus = "1"
 $vb_gui = false
